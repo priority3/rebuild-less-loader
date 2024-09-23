@@ -1,0 +1,25 @@
+{
+  "name": "test-rsbuild-less",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev --open",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "animate.less": "^2.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.0.1",
+    "@rsbuild/plugin-less": "^1.0.1",
+    "@rsbuild/plugin-react": "^1.0.1",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "less": "^4.1.2",
+    "less-loader": "5.0.0",
+    "typescript": "^5.5.2"
+  }
+}
