@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [pluginReact(),pluginLess()],
   source: {
     alias: {
-      '@animate': './node_modules/animate.less/animate.less'
+      '@animate/': './node_modules/animate.less/animate.less'
     }
   }
 });

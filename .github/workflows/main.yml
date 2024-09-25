@@ -1,0 +1,32 @@
+name: Build on push to main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js v16.20.1
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.20.1'
+
+      - name: Install pnpm 8.6.12
+        run: npm install -g pnpm@8.6.12
+
+      - name: Check versions
+        run: |
+          node -v
+          pnpm -v
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm run build

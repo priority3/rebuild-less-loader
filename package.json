@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "rsbuild dev --open",
+    "dev": "rsbuild dev",
     "build": "rsbuild build",
     "preview": "rsbuild preview"
   },
@@ -13,7 +13,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.0.1",
+    "@rsbuild/core": "^1.0.6",
     "@rsbuild/plugin-less": "^1.0.1",
     "@rsbuild/plugin-react": "^1.0.1",
     "@types/react": "^18.3.5",
